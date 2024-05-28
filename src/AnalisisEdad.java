@@ -24,6 +24,7 @@ public class AnalisisEdad {
 			}
 		}
 		
+		
 		return "Menores de Edad " + menoresEdad + ", Mayores de Edad " + mayoresEdad + ", Jubilados " + jubilados;
 
 	}
