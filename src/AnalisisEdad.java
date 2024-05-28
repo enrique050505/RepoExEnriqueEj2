@@ -18,7 +18,7 @@ public class AnalisisEdad {
 		for(int i=0; i<edades.size(); i++) {
 			if(edades.get(i)<18) {
 				menoresEdad= menoresEdad + 1;
-			}else if (edades.get(i)>=18 || edades.get(i)<65) {
+			}else if (edades.get(i)>=18 && edades.get(i)<65) {
 				mayoresEdad = mayoresEdad +1;
 			}else if (edades.get(i)>=65){
 				jubilados = jubilados +1;
