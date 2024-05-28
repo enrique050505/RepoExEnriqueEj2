@@ -10,6 +10,7 @@ public class AnalisisEdad {
 	}
 	
 	
+	
 	public String devolverFrase(ArrayList<Integer> edades) {
 		String frase = null;
 		int jubilados = 0, mayoresEdad = 0, menoresEdad = 0;
@@ -19,7 +20,7 @@ public class AnalisisEdad {
 				menoresEdad= menoresEdad + 1;
 			}else if (edades.get(i)>=18 || edades.get(i)<65) {
 				mayoresEdad = mayoresEdad +1;
-			}else {
+			}else if (edades.get(i)>=65){
 				jubilados = jubilados +1;
 			}
 		}
@@ -27,6 +28,6 @@ public class AnalisisEdad {
 		
 		return "Menores de Edad " + menoresEdad + ", Mayores de Edad " + mayoresEdad + ", Jubilados " + jubilados;
 
-	}
+	}//FIN DEVOLVER FRASE
 	
 }
